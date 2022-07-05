@@ -34,10 +34,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="2ee41279-6ff8-461f-9b37-cf3d1789940d" object-ref="schemas/demodb/tables/users" />
-      <object connection-id="2ee41279-6ff8-461f-9b37-cf3d1789940d" object-ref="schemas/demodb/tables/user" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2ee41279-6ff8-461f-9b37-cf3d1789940d" />
