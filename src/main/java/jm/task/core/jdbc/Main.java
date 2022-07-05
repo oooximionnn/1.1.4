@@ -28,16 +28,13 @@ public class Main {
         UserDao userDao = new UserDaoJDBCImpl();
 
         userDao.createUsersTable();
-
         userDao.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
         userDao.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
         userDao.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
         userDao.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
 
         System.out.println(userDao.getAllUsers());
-
         userDao.cleanUsersTable();
-
         userDao.dropUsersTable();
 
 
