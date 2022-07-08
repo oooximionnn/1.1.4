@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
         UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
+        userDaoHibernate.dropUsersTable();
         userDaoHibernate.createUsersTable();
 
         User user1 = new User("Viktor", "Petrov", (byte) 23);
@@ -27,6 +28,7 @@ public class Main {
         userDaoHibernate.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
 
         System.out.println(userDaoHibernate.getAllUsers());
+
         userDaoHibernate.cleanUsersTable();
         userDaoHibernate.dropUsersTable();
 
